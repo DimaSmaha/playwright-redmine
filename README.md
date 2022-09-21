@@ -10,7 +10,7 @@
 
 - Download and install Node.JS (at least 14.X)(https://nodejs.org/uk/)
 - Install Visual Studio Code (https://code.visualstudio.com/)
-- Open VS code terminal and clone repository `git clone https://github.com/DimaSmaha/`
+- Open VS code terminal and clone repository `git clone https://github.com/DimaSmaha/playwright-redmine`
 - Run in terminal `npm i` to install all you needed
 - Enter `npx plawright test` to run tests
 - Test files located in tests>(page_name).spec.ts and pages>(page_name).page.ts)
