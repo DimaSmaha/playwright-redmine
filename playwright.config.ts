@@ -28,6 +28,10 @@ const config: PlaywrightTestConfig = {
       use: { ...devices["Desktop Chrome"] },
     } /*
     {
+      name: "Desktop Chrome",
+      use: { browserName: "chromium" },
+    },
+    {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
