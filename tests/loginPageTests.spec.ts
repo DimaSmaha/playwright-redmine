@@ -1,6 +1,10 @@
+import { test, expect } from "@playwright/test";
 import { RedmineLoginPage } from "../pages/redmineLoginPage.page";
 import { RedmineHomePage } from "../pages/redmineHomePage.page";
-import { test, expect } from "@playwright/test";
+
+// const { test, expect } = require("@playwright/test");
+// const { RedmineLoginPage } = require("../pages/redmineLoginPage.page");
+// const { RedmineHomePage } = require("../pages/redmineHomePage.page");
 
 test.describe("Login page tests", () => {
   test.beforeEach(async ({ page }) => {

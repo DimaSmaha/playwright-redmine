@@ -1,7 +1,7 @@
+import { test, expect } from "@playwright/test";
 import { RedmineLoginPage } from "./../pages/redmineLoginPage.page";
 import { RedmineRegisterPage } from "./../pages/redmineRegisterPage.page";
 import { RedmineHomePage } from "../pages/redmineHomePage.page";
-import { test, expect } from "@playwright/test";
 
 test.describe("register page tests", () => {
   test.beforeEach(async ({ page }) => {
