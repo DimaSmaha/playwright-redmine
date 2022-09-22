@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { RedmineHomePage } from "../pages/redmineHomePage.page";
 import { RedmineHelpPage } from "../pages/redmineHelpPage.page";
 
-test.describe("Login page tests", () => {
+test.describe("Help page tests", () => {
   test.beforeEach(async ({ page }) => {
     let redmineHomePage = new RedmineHomePage(page);
     await redmineHomePage.goto();
@@ -10,7 +10,7 @@ test.describe("Login page tests", () => {
     await redmineHomePage.checkPageUrl();
   });
 
-  test("Should sing in to created account", async ({ page }) => {
+  test("Should show guide on French", async ({ page }) => {
     let redmineHomePage = new RedmineHomePage(page);
     let redmineHelpPage = new RedmineHelpPage(page);
 
