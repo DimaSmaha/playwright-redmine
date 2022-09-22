@@ -5,11 +5,13 @@ export class RedmineHomePage {
   readonly page: Page;
   readonly signInBtn: Locator;
   readonly myAccountBtn: Locator;
+  readonly registerBtn: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.signInBtn = page.locator("text=Sign in");
     this.myAccountBtn = page.locator("text=My Account");
+    this.registerBtn = page.locator('a:has-text("Register")');
   }
 
   async checkPageUrl() {
