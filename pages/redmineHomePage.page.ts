@@ -11,6 +11,8 @@ export class RedmineHomePage {
   readonly registerBtn: Locator;
   readonly helpBtn: Locator;
   readonly roadmapBtn: Locator;
+  readonly issuesBtn: Locator;
+  readonly mainMenu: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -19,6 +21,8 @@ export class RedmineHomePage {
     this.registerBtn = page.locator('a:has-text("Register")');
     this.helpBtn = page.locator("#top-menu >> text=Help");
     this.roadmapBtn = page.locator("text=Roadmap");
+    this.issuesBtn = page.locator("a:has-text('Issues')");
+    this.mainMenu = page.locator("[id='main-menu']>ul>li");
   }
 
   async checkPageUrl() {
@@ -40,5 +44,9 @@ export class RedmineHomePage {
 
   async clickRoadmapBtn() {
     await this.roadmapBtn.click();
+  }
+
+  async clickIssuesBtn() {
+    await this.issuesBtn.click();
   }
 }
