@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import { RedmineLoginPage } from "../pages/redmineLoginPage.page";
 import { RedmineHomePage } from "../pages/redmineHomePage.page";
 
+// Other way of imports
 // const { test, expect } = require("@playwright/test");
 // const { RedmineLoginPage } = require("../pages/redmineLoginPage.page");
 // const { RedmineHomePage } = require("../pages/redmineHomePage.page");

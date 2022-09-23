@@ -16,6 +16,7 @@ const config: PlaywrightTestConfig = {
   use: {
     baseURL: "https://www.redmine.org/",
     browserName: "chromium",
+    locale: "en-GB",
     actionTimeout: 0,
     trace: "on",
     headless: false,

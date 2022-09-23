@@ -3,7 +3,7 @@ import { RedmineLoginPage } from "./../pages/redmineLoginPage.page";
 import { RedmineRegisterPage } from "./../pages/redmineRegisterPage.page";
 import { RedmineHomePage } from "../pages/redmineHomePage.page";
 
-test.describe("register page tests", () => {
+test.describe("Register page tests", () => {
   test.beforeEach(async ({ page }) => {
     let redmineHomePage = new RedmineHomePage(page);
     await redmineHomePage.goto();
