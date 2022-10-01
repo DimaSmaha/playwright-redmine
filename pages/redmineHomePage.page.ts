@@ -13,6 +13,7 @@ export class RedmineHomePage {
   readonly roadmapBtn: Locator;
   readonly issuesBtn: Locator;
   readonly mainMenu: Locator;
+  readonly searchInput: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -23,6 +24,7 @@ export class RedmineHomePage {
     this.roadmapBtn = page.locator("text=Roadmap");
     this.issuesBtn = page.locator("a:has-text('Issues')");
     this.mainMenu = page.locator("[id='main-menu']>ul>li");
+    this.searchInput = page.locator('input[name="q"]');
   }
 
   async checkPageUrl() {
@@ -48,5 +50,9 @@ export class RedmineHomePage {
 
   async clickIssuesBtn() {
     await this.issuesBtn.click();
+  }
+
+  async fillSearchInput(searchValue: string) {
+    await this.searchInput.fill(searchValue);
   }
 }
