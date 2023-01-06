@@ -19,12 +19,12 @@ export class RedmineHelpPage {
     this.frenchLang = page.locator("text=French");
   }
 
-  async checkPageUrl() {
-    await expect(this.page).toHaveURL("/guide");
-  }
-
   async goto() {
     await this.page.goto("/guide");
+  }
+
+  async checkPageUrl() {
+    await expect(this.page).toHaveURL("/guide");
   }
 
   async clickGoToTranslationsBtn() {
